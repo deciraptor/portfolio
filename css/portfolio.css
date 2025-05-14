@@ -105,20 +105,6 @@ header {
     filter: brightness(0.9);
 }
 
-/* Desktop spacing */
-@media (min-width: 992px) {
-    .navbar-nav .nav-item+.nav-item {
-        margin-left: var(--nav-spacing);
-    }
-}
-
-/* Mobile spacing */
-@media (max-width: 991.98px) {
-    .navbar-nav .nav-item+.nav-item {
-        margin-top: 0.75rem;
-    }
-}
-
 /* Toggler mobile personnalisé */
 .navbar-toggler {
     background-color: var(--color-btn) !important;
@@ -188,3 +174,27 @@ header {
     background-color: #28965a;
     position: absolute;
 }
+
+
+/* =====  ===== */
+
+
+/* Desktop spacing */
+@media (min-width: 992px) {
+    .navbar-nav .nav-item+.nav-item {
+        margin-left: var(--nav-spacing);
+    }
+}
+
+/* Mobile spacing */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item+.nav-item {
+        margin-top: 0.75rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #cta-btn {
+      font-size: 0.7rem;  /* plus petit que la valeur par défaut */
+    }
+  }
