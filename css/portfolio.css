@@ -1,8 +1,117 @@
 :root {
+    /* Couleurs */
     --color-bgPrimary: #191919;
     --color-bgAccent: #1d1c2a;
     --color-fontPrimary: #ffffff;
     --color-fontAccent: #19c79a;
-    --colorStroke: #19c79a;
+    --color-stroke: #19c79a;
+    --color-btn: #19c79a;
+    /* Espaces */
+    --nav-spacing: 1.5rem;
+    /* Taille police */
+    --nav-font-size: 0.875rem;      
+    --brand-font-size: 1.5rem; 
+    --btn-font-size: 0.875rem;   
 }
 
+/* ===== Police de carctère ===== */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/assets/fonts/Montserrat-Black.ttf') format('truetype');
+}
+
+
+/* ===== Style appliqué à l'ensemble du contenu ===== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== Header ===== */
+
+.navbar,
+.navbar-brand,
+.btn-contact,
+.nav-link {
+    font-weight: 700 !important;
+}
+
+.navbar {
+    background-color: var(--color-bgPrimary) !important;
+}
+
+.navbar-brand span {
+    color: var(--color-fontAccent) !important;
+    font-size: var(--brand-font-size);
+}
+
+.brand-highlight {
+    color: var(--color-btn) !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: var(--nav-font-size);
+}
+
+.btn-contact {
+    background-color: var(--color-btn) !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-size: var(--btn-font-size);
+}
+
+.btn-contact:hover {
+    filter: brightness(0.9);
+}
+
+/* Desktop spacing */
+@media (min-width: 992px) {
+    .navbar-nav .nav-item+.nav-item {
+        margin-left: var(--nav-spacing);
+    }
+}
+
+/* Mobile spacing */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item+.nav-item {
+        margin-top: 0.75rem;
+    }
+}
+
+/* Toggler mobile personnalisé */
+.navbar-toggler {
+    background-color: var(--color-btn) !important;
+    border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem var(--color-fontPrimary) !important;
+}
+
+  
