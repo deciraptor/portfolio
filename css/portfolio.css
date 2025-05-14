@@ -9,9 +9,9 @@
     /* Espaces */
     --nav-spacing: 1.5rem;
     /* Taille police */
-    --nav-font-size: 0.875rem;      
-    --brand-font-size: 1.5rem; 
-    --btn-font-size: 0.875rem;   
+    --nav-font-size: 0.875rem;
+    --brand-font-size: 1.5rem;
+    --btn-font-size: 0.875rem;
 }
 
 /* ===== Police de carctère ===== */
@@ -46,11 +46,27 @@
 
 /* ===== Style appliqué à l'ensemble du contenu ===== */
 
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 /* ===== Header ===== */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+  }
 
 .navbar,
 .navbar-brand,
@@ -59,9 +75,9 @@ body {
     font-weight: 700 !important;
 }
 
-.navbar {
+/* .navbar {
     background-color: var(--color-bgPrimary) !important;
-}
+} */
 
 .navbar-brand span {
     color: var(--color-fontAccent) !important;
@@ -108,10 +124,9 @@ body {
     border: none !important;
 }
 
+
 .navbar-toggler:focus,
 .navbar-toggler:focus-visible {
-  outline: none !important;
-  box-shadow: 0 0 0 0.2rem var(--color-fontPrimary) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 0.2rem var(--color-fontPrimary) !important;
 }
-
-  
