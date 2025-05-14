@@ -129,7 +129,8 @@ header {
     z-index: 10;
     /* au-dessus du canvas particles */
     width: max-content;
-    margin: 0 auto;              /* ← centre le bloc horizontalement */
+    margin: 0 auto;
+    /* ← centre le bloc horizontalement */
 
 }
 
@@ -166,6 +167,11 @@ header {
     background-color: var(--color-btn);
 }
 
+
+
+
+
+
 /* =====  ===== */
 
 .parallax {
@@ -195,6 +201,7 @@ header {
 
 @media (max-width: 575.98px) {
     #cta-btn {
-      font-size: 0.7rem;  /* plus petit que la valeur par défaut */
+        font-size: 0.7rem;
+        /* plus petit que la valeur par défaut */
     }
-  }
+}
