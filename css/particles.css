@@ -1,30 +1,37 @@
+:root {
+  /* Couleurs */
+  --color-bgPrimary: #191919;
+  --color-bgAccent: #1d1c2a;
+  --color-fontPrimary: #ffffff;
+  --color-fontAccent: #19c79a;
+  --color-stroke: #19c79a;
+  --color-btn: #19c79a;
+}
 
-/* ---- base ---- */
+/* ===== base ===== */
 
 canvas {
   display: block;
-  /* vertical-align: bottom; */
   position: fixed;
 
 }
 
-/* ---- particles.js container ---- */
+#particles-js canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* index de base, juste au-dessus du fond de page */
+}
+
+/* ===== particles.js container ===== */
 
 #particles-js {
   width: 100%;
   height: 100%;
-  background-color: #191919;
+  background-color: var(--color-bgPrimary);
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-
-.parallax {
-  width: 100%;
-  height: 100%;
-  background-color: #28965a;
-  position: absolute;
-
-}
-
