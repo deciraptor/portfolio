@@ -94,10 +94,6 @@ header {
     font-weight: 700 !important;
 }
 
-/* .navbar {
-    background-color: var(--color-bgPrimary) !important;
-} */
-
 .navbar-brand span {
     color: var(--color-fontAccent) !important;
     font-size: var(--brand-font-size);
@@ -219,7 +215,6 @@ header {
     color: var(--color-fontPrimary);
     position: relative;
     z-index: 20;
-
 }
 
 .skill-card {
@@ -231,8 +226,8 @@ header {
     min-width: 180px;
     min-height: 12rem;
     margin-top: 3rem;
-    max-width: 80%;   
-    margin: auto;       
+    max-width: 80%;
+    margin: auto;
     filter: brightness(1.1);
 }
 
@@ -258,13 +253,57 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
-  }
+}
 
-  .skill-icons.oneline {
-padding-top: 2.5rem;
-  }
+.skill-icons.oneline {
+    padding-top: 2.5rem;
+}
 
-/* =====  ===== */
+/* ===== Formation ===== */
+
+.formation-section {
+    background-color: var(--color-bgPrimary);
+    color: var(--color-fontPrimary);
+    position: relative;
+    z-index: 20;
+}
+
+.dot {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: #1ABC9C;
+    border: 3px solid #121212;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #1E1E1E;
+    border: none;
+}
+
+.card-body {
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.step-title {
+    color: #1ABC9C;
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.institution {
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.year {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* ===== Footer ===== */
 #mainFooter {
     position: auto;
     bottom: 0;
@@ -295,6 +334,7 @@ padding-top: 2.5rem;
         font-size: 0.7rem;
         /* plus petit que la valeur par défaut */
     }
+
     .lead {
         font-size: 1rem;
     }

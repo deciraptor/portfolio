@@ -12,6 +12,10 @@ function scrollFunction() {
     }
 }
 
-document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
-    new bootstrap.Tooltip(el);
+document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('btn');
+    new bootstrap.Tooltip(btn, {
+        customClass: 'custom-tooltip',
+        placement: 'top'
+    });
 });

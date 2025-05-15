@@ -19,12 +19,9 @@
     <!--==========  Liens CSS  ==========-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/particles.css" />
-    <!--==========  Liens JavaScript  ==========-->
-    <!-- <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/menu.js"></script> -->
+    <link rel="stylesheet" href="css/portfolio.css" />
 </head>
 
 <body> <!--========== Balise qui comprend le contenu de la page ==========-->
@@ -52,10 +49,10 @@
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#parcours">Parcours</a>
+                            <a class="nav-link" href="#formation">Formation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projets">Projets</a>
+                            <a class="nav-link" href="#projets">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-contact" href="#contact">Contact</a>
@@ -67,6 +64,7 @@
     </header> <!-- Ici se termine le mainHeader -->
 
     <main id="mainContent">
+        <!-- Particles -->
         <div id="particles-js">
             <section class="hero">
                 <div class="cta-wrapper">
@@ -103,78 +101,173 @@
                 </div>
             </div>
         </section>
+        <!-- Fin Section A propos -->
 
         <!-- Section Skills -->
-  <section id="skills" class="skills-section py-5">
-    <div class="container">
-      <!-- Titre -->
-      <div class="text-center mb-5">
-        <h2>Skills</h2>
-        <h3 class="mb-4">Mes compétences</h3>
-      </div>
+        <section id="skills" class="skills-section py-5">
+            <div class="container">
+                <!-- Titre -->
+                <div class="text-center mb-5">
+                    <h2>Skills</h2>
+                    <h3 class="mb-4">Mes compétences</h3>
+                </div>
 
-      <!-- Grille responsive : xs 1col, sm 2col, lg 4col -->
-      <div class="row gx-3 gy-4 justify-content-center">
+                <!-- Grille responsive -->
+                <div class="row gx-3 gy-4 justify-content-center">
 
-        <!-- Carte 1 : Langages -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="skill-card d-flex flex-column align-items-center">
-            <h4>Langages</h4>
-            <div class="skill-icons">
-              <img src="/assets/icons/logos/java.png"       alt="Java"       data-bs-toggle="tooltip" title="Java">
-              <img src="/assets/icons/logos/javascript.png" alt="JS"         data-bs-toggle="tooltip" title="JavaScript">
-              <img src="/assets/icons/logos/typescript.png" alt="TS"         data-bs-toggle="tooltip" title="TypeScript">
+                    <!-- Carte 1 : Langages -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="skill-card d-flex flex-column align-items-center">
+                            <h4>Langages</h4>
+                            <div class="skill-icons">
+                                <img src="/assets/icons/logos/java.png" alt="Java" data-bs-toggle="tooltip"
+                                    title="Java">
+                                <img src="/assets/icons/logos/javascript.png" alt="JS" data-bs-toggle="tooltip"
+                                    title="JavaScript">
+                                <img src="/assets/icons/logos/typescript.png" alt="TS" data-bs-toggle="tooltip"
+                                    title="TypeScript">
+                            </div>
+                            <div class="skill-icons">
+                                <img src="/assets/icons/logos/html.png" alt="HTML5" data-bs-toggle="tooltip"
+                                    title="HTML5">
+                                <img src="/assets/icons/logos/css.png" alt="CSS3" data-bs-toggle="tooltip" title="CSS3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 2 : Frameworks -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="skill-card d-flex flex-column align-items-center">
+                            <h4>Frameworks</h4>
+                            <div class="skill-icons oneline">
+                                <img src="/assets/icons/logos/spring.png" alt="Spring" data-bs-toggle="tooltip"
+                                    title="Spring">
+                                <img src="/assets/icons/logos/springBoot.png" alt="Spring Boot" data-bs-toggle="tooltip"
+                                    title="Spring Boot">
+                                <img src="/assets/icons/logos/angular.png" alt="Angular" data-bs-toggle="tooltip"
+                                    title="Angular">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 3 : BDD -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="skill-card d-flex flex-column align-items-center">
+                            <h4>BDD</h4>
+                            <div class="skill-icons stack">
+                                <img src="/assets/icons/logos/mySql.png" alt="MySQL" data-bs-toggle="tooltip"
+                                    title="MySQL">
+                                <img src="/assets/icons/logos/mongoDb.png" alt="MongoDB" data-bs-toggle="tooltip"
+                                    title="MongoDB">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 4 : Outils -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="skill-card d-flex flex-column align-items-center">
+                            <h4>Outils</h4>
+                            <div class="skill-icons">
+                                <img src="/assets/icons/logos/git2.png" alt="Git" data-bs-toggle="tooltip" title="Git">
+                                <img src="/assets/icons/logos/github.png" alt="GitHub" data-bs-toggle="tooltip"
+                                    title="GitHub">
+                            </div>
+                            <div class="skill-icons">
+                                <img src="/assets/icons/logos/linux.png" alt="Linux" data-bs-toggle="tooltip"
+                                    title="Linux">
+                                <img src="/assets/icons/logos/postman.png" alt="Postman" data-bs-toggle="tooltip"
+                                    title="Postman">
+                                <img src="/assets/icons/logos/figma.png" alt="Figma" data-bs-toggle="tooltip"
+                                    title="Figma">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="skill-icons">
-                <img src="/assets/icons/logos/html.png"       alt="HTML5"      data-bs-toggle="tooltip" title="HTML5">
-                <img src="/assets/icons/logos/css.png"        alt="CSS3"       data-bs-toggle="tooltip" title="CSS3">
-              </div>
-          </div>
-        </div>
+        </section>
+        <!-- Fin Section Skills -->
 
-        <!-- Carte 2 : Frameworks -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="skill-card d-flex flex-column align-items-center">
-            <h4>Frameworks</h4>
-            <div class="skill-icons oneline">
-              <img src="/assets/icons/logos/spring.png"      alt="Spring"      data-bs-toggle="tooltip" title="Spring">
-              <img src="/assets/icons/logos/springBoot.png"  alt="Spring Boot" data-bs-toggle="tooltip" title="Spring Boot">
-              <img src="/assets/icons/logos/angular.png"     alt="Angular"     data-bs-toggle="tooltip" title="Angular">
-            </div>
-          </div>
-        </div>
+        <!-- Section Formation -->
+        <section id="formation" class="formation-section container-fluid px-0 py-5">
+            <div class="container px-4">
 
-        <!-- Carte 3 : BDD -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="skill-card d-flex flex-column align-items-center">
-            <h4>BDD</h4>
-            <div class="skill-icons stack">
-              <img src="/assets/icons/logos/mySql.png"   alt="MySQL"   data-bs-toggle="tooltip" title="MySQL">
-              <img src="/assets/icons/logos/mongoDb.png" alt="MongoDB" data-bs-toggle="tooltip" title="MongoDB">
-            </div>
-          </div>
-        </div>
+                <div class="text-center mb-5">
+                    <h2>Formation</h2>
+                    <h3>Mon parcours</h3>
+                </div>
 
-        <!-- Carte 4 : Outils -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="skill-card d-flex flex-column align-items-center">
-            <h4>Outils</h4>
-            <div class="skill-icons">
-              <img src="/assets/icons/logos/git2.png"    alt="Git"      data-bs-toggle="tooltip" title="Git">
-              <img src="/assets/icons/logos/github.png"  alt="GitHub"   data-bs-toggle="tooltip" title="GitHub">
-            </div>
-            <div class="skill-icons">
-              <img src="/assets/icons/logos/linux.png"   alt="Linux"    data-bs-toggle="tooltip" title="Linux">
-              <img src="/assets/icons/logos/postman.png" alt="Postman"  data-bs-toggle="tooltip" title="Postman">
-              <img src="/assets/icons/logos/figma.png"   alt="Figma"    data-bs-toggle="tooltip" title="Figma">
-            </div>
-          </div>
-        </div>
+                <!-- Étape 1 -->
+                <div class="row align-items-start mb-4">
+                    <!-- résumé -->
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-2 mb-sm-0">
+                        <div class="dot me-3"></div>
+                        <div>
+                            <div class="step-title">Concepteur développeur d’applications</div>
+                            <div class="institution">ISIKA</div>
+                            <div class="year">2025</div>
+                        </div>
+                    </div>
+                    <!-- description -->
+                    <div class="col-12 col-sm-8">
+                        <div class="card">
+                            <div class="card-body">
+                                En six mois intensifs, ce cursus complet alterne cours classiques et en autonomie, deux
+                                projets de groupe et un projet individuel, pour vous faire acquérir et développer des
+                                compétences back-end et front-end solides.
+                                Les principales technologies abordées sont : Java, Spring et Angular.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      </div><!-- /row -->
-    </div><!-- /container -->
-  </section>
-  <!-- Fin Section Skills -->
+                <!-- Étape 2 -->
+                <div class="row align-items-start mb-4">
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-2 mb-sm-0">
+                        <div class="dot me-3"></div>
+                        <div>
+                            <div class="step-title">Préparation Développement Web “Pépi-Dèv”</div>
+                            <div class="institution">2i Académy</div>
+                            <div class="year">2024</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <div class="card">
+                            <div class="card-body">
+                                En quatre mois de cours du soir, ce dispositif permet d’acquérir les bases du
+                                développement web en travaillant sur un projet concret.
+                                Les principales technologies abordées sont HTML, CSS et Javascript.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="row align-items-start">
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-2 mb-sm-0">
+                        <div class="dot me-3"></div>
+                        <div>
+                            <div class="step-title">Master Management de Projets</div>
+                            <div class="institution">Université Paris Est</div>
+                            <div class="year">2009</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <div class="card">
+                            <div class="card-body">
+                                Déploiement des outils de gestion de projet (Kanban, Lean, Gantt) de l’étude de
+                                faisabilité au livrable.
+                                Approche systémique – Pilotage et Gestion des Ressources – Conduite de Projet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Fin Section Formation -->
 
 
     </main> <!-- Ici se termine mainContent -->
@@ -184,10 +277,10 @@
     </footer> <!-- Ici se termine le mainFooter -->
 
     <!--==========  Liens JavaScript  ==========-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/particles.js"></script>
-    <script src="js/main.js"></script>
 
 </body> <!--========== Ici se termine le contenu de la page ==========-->
 
