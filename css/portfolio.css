@@ -196,6 +196,7 @@ header {
     height: auto;
     position: relative;
     z-index: 20;
+    filter: brightness(1.1);
 }
 
 .lead {
@@ -214,22 +215,15 @@ header {
 /* ===== skills ===== */
 
 .skills-section {
-    background-color: #121212;
-    color: #fff;
+    background-color: var(--color-bgPrimary);
+    color: var(--color-fontPrimary);
     position: relative;
     z-index: 20;
 
 }
 
-.skills-section .connector {
-    flex: 1;
-    height: 1px;
-    background-color: #fff;
-    margin-top: 6%;
-}
-
 .skill-card {
-    background-color: #1E1E2C;
+    background-color: var(--color-bgAccent);
     border-radius: 1rem;
     padding: 1.5rem;
     flex: 0 0 auto;
@@ -237,6 +231,9 @@ header {
     min-width: 180px;
     min-height: 12rem;
     margin-top: 3rem;
+    max-width: 80%;   
+    margin: auto;       
+    filter: brightness(1.1);
 }
 
 .skill-card:hover {
@@ -297,5 +294,8 @@ padding-top: 2.5rem;
     #cta-btn {
         font-size: 0.7rem;
         /* plus petit que la valeur par défaut */
+    }
+    .lead {
+        font-size: 1rem;
     }
 }
