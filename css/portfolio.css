@@ -61,6 +61,24 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-fontPrimary)
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-fontAccent)
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-fontAccent)
+}
+
 /* ===== Header ===== */
 
 header {
@@ -124,7 +142,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     position: relative;
     z-index: 10;
     /* au-dessus du canvas particles */
@@ -139,6 +157,9 @@ header {
     flex-direction: column;
     align-items: center;
     width: max-content;
+    transform: translateY(-20%);
+    /* remonte de 10% de sa propre hauteur */
+
 }
 
 .cta-image {
@@ -167,20 +188,93 @@ header {
     background-color: var(--color-btn);
 }
 
+/* ===== aboutMe ===== */
 
-
-
-
-
-/* =====  ===== */
-
-.parallax {
+.aboutMe {
+    background-color: var(--color-bgAccent);
     width: 100%;
-    height: 100%;
-    background-color: #28965a;
-    position: absolute;
+    height: auto;
+    position: relative;
+    z-index: 20;
 }
 
+.lead {
+    color: var(--color-fontPrimary);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.text-accent {
+    color: var(--color-fontAccent)
+}
+
+/* ===== skills ===== */
+
+.skills-section {
+    background-color: #121212;
+    color: #fff;
+    position: relative;
+    z-index: 20;
+
+}
+
+.skills-section .connector {
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 6%;
+}
+
+.skill-card {
+    background-color: #1E1E2C;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    flex: 0 0 auto;
+    text-align: center;
+    min-width: 180px;
+    min-height: 12rem;
+    margin-top: 3rem;
+}
+
+.skill-card:hover {
+    filter: brightness(1.4);
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding-top: 1.2rem;
+}
+
+.skill-icons img {
+    width: auto;
+    height: 32px;
+}
+
+.skill-icons.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .skill-icons.oneline {
+padding-top: 2.5rem;
+  }
+
+/* =====  ===== */
+#mainFooter {
+    position: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: pink;
+}
 
 /* =====  ===== */
 

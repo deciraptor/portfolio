@@ -27,7 +27,7 @@ canvas {
 
 #particles-js {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--color-bgPrimary);
   background-image: url('');
   background-size: cover;

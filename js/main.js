@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("mainHeader").style.backgroundColor = "#191919";
-    document.getElementById("mainHeader").style.borderBottom = "4px solid #1d1c2a";
+    document.getElementById("mainHeader").style.borderBottom = "1px solid #19c79a";
 
   } else {
     document.getElementById("mainHeader").style.backgroundColor = "transparent";
