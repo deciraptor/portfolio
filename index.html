@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/particles.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
 </head>
 
 <body> <!--========== Balise qui comprend le contenu de la page ==========-->
@@ -49,10 +49,10 @@
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#parcours">Parcours</a>
+                            <a class="nav-link" href="#formation">Formation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projets">Projets</a>
+                            <a class="nav-link" href="#projets">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-contact" href="#contact">Contact</a>
@@ -64,6 +64,7 @@
     </header> <!-- Ici se termine le mainHeader -->
 
     <main id="mainContent">
+        <!-- Particles -->
         <div id="particles-js">
             <section class="hero">
                 <div class="cta-wrapper">
@@ -86,20 +87,21 @@
                             <!-- Paragraphe -->
                             <p class="lead">
                                 Passionné par le
-                                <a href="#" class="text-accent text-decoration-none">digital</a>
+                                <a class="text-accent text-decoration-none" style="cursor:default">digital</a>
                                 et guidé par ma curiosité, j’ai développé un profil polyvalent mêlant
                                 gestion de projet et
-                                <a href="#" class="text-accent text-decoration-none">développement full-stack</a>.
+                                <a class="text-accent text-decoration-none" style="cursor:default">développement
+                                    full-stack</a>.
                                 Mon objectif est d’intégrer une alternance au sein d’une équipe dynamique pour
                                 mettre à profit mes compétences techniques tout en continuant d’apprendre.
                                 Rigoureux,
-                                <a href="#" class="text-accent text-decoration-none">collaboratif</a>
+                                <a class="text-accent text-decoration-none" style="cursor:default">collaboratif</a>
                                 et toujours à l’écoute, je transforme vos besoins en solutions créatives et impactantes.
                             </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> <!-- Fin Section A propos -->
 
         <!-- Section Skills -->
         <section id="skills" class="skills-section py-5">
@@ -109,10 +111,8 @@
                     <h2>Skills</h2>
                     <h3 class="mb-4">Mes compétences</h3>
                 </div>
-
-                <!-- Grille responsive : xs 1col, sm 2col, lg 4col -->
+                <!-- Grille responsive -->
                 <div class="row gx-3 gy-4 justify-content-center">
-
                     <!-- Carte 1 : Langages -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="skill-card d-flex flex-column align-items-center">
@@ -132,7 +132,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Carte 2 : Frameworks -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="skill-card d-flex flex-column align-items-center">
@@ -147,7 +146,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Carte 3 : BDD -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="skill-card d-flex flex-column align-items-center">
@@ -160,7 +158,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Carte 4 : Outils -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="skill-card d-flex flex-column align-items-center">
@@ -180,12 +177,83 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section> <!-- Fin Section Skills -->
 
-                </div><!-- /row -->
-            </div><!-- /container -->
-        </section>
-        <!-- Fin Section Skills -->
+        <!-- Section Formation -->
+        <section id="formation" class="formation-section container-fluid px-0 py-5">
+            <div class="container px-4">
 
+                <div class="text-center mb-5">
+                    <h2>Formation</h2>
+                    <h3>Mon parcours</h3>
+                </div>
+                <!-- Étape 1 -->
+                <div class="row align-items-start mb-4">
+                    <!-- résumé -->
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-2 mb-sm-0">
+                        <div class="dot me-3"></div>
+                        <div>
+                            <div class="step-title">Concepteur développeur d’applications</div>
+                            <div class="institution">ISIKA</div>
+                            <div class="year">2025</div>
+                        </div>
+                    </div>
+                    <!-- description -->
+                    <div class="col-12 col-sm-8">
+                        <div class="card">
+                            <div class="card-body">
+                                En six mois intensifs, ce cursus complet alterne cours classiques et en autonomie, deux
+                                projets de groupe et un projet individuel, pour vous faire acquérir et développer des
+                                compétences back-end et front-end solides.
+                                Les principales technologies abordées sont : Java, Spring et Angular.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Étape 2 -->
+                <div class="row align-items-start mb-4">
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-2 mb-sm-0">
+                        <div class="dot me-3"></div>
+                        <div>
+                            <div class="step-title">Préparation Développement Web “Pépi-Dèv”</div>
+                            <div class="institution">2i Académy</div>
+                            <div class="year">2024</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <div class="card">
+                            <div class="card-body">
+                                En quatre mois de cours du soir, ce dispositif permet d’acquérir les bases du
+                                développement web en travaillant sur un projet concret.
+                                Les principales technologies abordées sont HTML, CSS et Javascript.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Étape 3 -->
+                <div class="row align-items-start">
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-2 mb-sm-0">
+                        <div class="dot me-3"></div>
+                        <div>
+                            <div class="step-title">Master Management de Projets</div>
+                            <div class="institution">Université Paris Est</div>
+                            <div class="year">2009</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <div class="card">
+                            <div class="card-body">
+                                Déploiement des outils de gestion de projet (Kanban, Lean, Gantt) de l’étude de
+                                faisabilité au livrable.
+                                Approche systémique – Pilotage et Gestion des Ressources – Conduite de Projet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- Fin Section Formation -->
 
     </main> <!-- Ici se termine mainContent -->
 
@@ -195,9 +263,9 @@
 
     <!--==========  Liens JavaScript  ==========-->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/particles.js"></script>
-    <script src="js/main.js"></script>
 
 </body> <!--========== Ici se termine le contenu de la page ==========-->
 

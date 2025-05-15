@@ -274,35 +274,47 @@ header {
     flex-shrink: 0;
     width: 1rem;
     height: 1rem;
-    background-color: #1ABC9C;
-    border: 3px solid #121212;
+    background-color: var(--color-btn);
     border-radius: 50%;
+    margin-top: 1.4rem;
 }
 
 .card {
-    background-color: #1E1E1E;
     border: none;
+    border-radius: 20px;
+    background-color: var(--color-bgAccent);
 }
 
 .card-body {
-    color: #ddd;
-    line-height: 1.5;
+    color: var(--color-fontPrimary);
+    line-height: 1.6;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.card-wBody {
+    background-color: var(--color-bgPrimary);
+    padding-left: 0.9rem;
 }
 
 .step-title {
-    color: #1ABC9C;
-    font-weight: 600;
+    color: var(--color-fontAccent);
+    font-weight: 700;
     margin-bottom: .25rem;
+    padding-top: 1rem;
+    line-height: 2;
 }
 
 .institution {
     font-weight: 500;
     margin-bottom: .25rem;
+    color: var(--color-fontPrimary);
 }
 
 .year {
-    color: #ccc;
+    color: var(--color-fontPrimary);
     font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /* ===== Footer ===== */
@@ -340,4 +352,3 @@ header {
         font-size: 1rem;
     }
 }
-
