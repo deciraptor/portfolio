@@ -113,7 +113,7 @@ header {
 .btn-contact {
     background-color: var(--color-btn) !important;
     border: none !important;
-    color: #ffffff !important;
+    color: var(--color-fontPrimary) !important;
     font-size: var(--btn-font-size);
 }
 
@@ -184,6 +184,16 @@ header {
 
 #cta-btn:hover {
     background-color: var(--color-btn);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 10rem;
+    /*  ajustez selon l’espacement souhaité */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: var(--color-btn);
 }
 
 /* ===== aboutMe ===== */
@@ -282,7 +292,7 @@ header {
 .card {
     border: none;
     border-radius: 20px;
-    background-color: var(--color-bgAccent);
+    background-color: #201f2e;
 }
 
 .card-body {
