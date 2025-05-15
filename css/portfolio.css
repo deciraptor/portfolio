@@ -113,7 +113,7 @@ header {
 .btn-contact {
     background-color: var(--color-btn) !important;
     border: none !important;
-    color: var(--color-fontPrimary) !important;
+    color: var(--color-bgPrimary) !important;
     font-size: var(--btn-font-size);
 }
 
