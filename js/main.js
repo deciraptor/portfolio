@@ -12,10 +12,6 @@ function scrollFunction() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.getElementById('btn');
-    new bootstrap.Tooltip(btn, {
-        customClass: 'custom-tooltip',
-        placement: 'top'
-    });
-});
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+

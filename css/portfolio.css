@@ -64,7 +64,9 @@ button {
 h2 {
     font-size: 2rem;
     font-weight: 900;
-    color: var(--color-fontPrimary)
+    color: var(--color-fontPrimary);
+    margin-top: 2rem;
+    ;
 }
 
 h3 {
@@ -312,23 +314,22 @@ header {
     background-color: pink;
 }
 
-/* =====  ===== */
-
-
-/* Desktop spacing */
+/* ===== Media ===== */
+/* Desktop */
 @media (min-width: 992px) {
     .navbar-nav .nav-item+.nav-item {
         margin-left: var(--nav-spacing);
     }
 }
 
-/* Mobile spacing */
+/* Tablet */
 @media (max-width: 991.98px) {
     .navbar-nav .nav-item+.nav-item {
         margin-top: 0.75rem;
     }
 }
 
+/* Mobile */
 @media (max-width: 575.98px) {
     #cta-btn {
         font-size: 0.7rem;
@@ -339,3 +340,4 @@ header {
         font-size: 1rem;
     }
 }
+
