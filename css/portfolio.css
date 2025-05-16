@@ -127,7 +127,6 @@ header {
     border: none !important;
 }
 
-
 .navbar-toggler:focus,
 .navbar-toggler:focus-visible {
     outline: none !important;
@@ -142,12 +141,11 @@ header {
     justify-content: center;
     height: 100vh;
     position: relative;
-    z-index: 10;
+    /* z-index: 0; */
     /* au-dessus du canvas particles */
     width: max-content;
     margin: 0 auto;
     /* ← centre le bloc horizontalement */
-
 }
 
 .cta-wrapper {
@@ -157,7 +155,7 @@ header {
     width: max-content;
     transform: translateY(-20%);
     /* remonte de 10% de sa propre hauteur */
-
+    z-index: 10;
 }
 
 .cta-image {
@@ -194,6 +192,7 @@ header {
     transform: translateX(-50%);
     font-size: 3rem;
     color: var(--color-btn);
+    z-index: 10;
 }
 
 /* ===== aboutMe ===== */
@@ -271,6 +270,15 @@ header {
     padding-top: 2.5rem;
 }
 
+.icon-32 {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0;
+}
+
 /* ===== Formation ===== */
 
 .formation-section {
@@ -326,6 +334,67 @@ header {
     font-size: 0.9rem;
     font-weight: 400;
 }
+
+/* ===== Portfolio ===== */
+
+.portfolio-section {
+    background-color: var(--color-bgPrimary);
+    color: var(--color-fontPrimary);
+    position: relative;
+    z-index: 20;
+}
+
+.card-image-wrapper {
+    background-color: #201f2e;
+}
+
+.project-img {
+    filter: brightness(0.8);
+    /* 0 = noir total, 1 = image d'origine */
+}
+
+.project-img:hover {
+    filter: brightness(1);
+    /* 0 = noir total, 1 = image d'origine */
+}
+
+#iconPtf {
+    font-size: 24px;
+}
+
+.projets-icon1 {
+    width: auto;
+    height: 24px;
+}
+
+.projets-icon2 {
+    width: auto;
+    height: 29px;
+}
+
+.card-title {
+    color: var(--color-fontAccent);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.badge-project {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-btn);
+    color: var(--color-bgPrimary);
+    font-weight: 700;
+    padding: 0.5em 0.75em;
+    border-radius: 0.8rem;
+    min-width: 4rem;
+}
+
 
 /* ===== Footer ===== */
 #mainFooter {
