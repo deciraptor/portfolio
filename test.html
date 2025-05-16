@@ -1,6 +1,5 @@
-<!DOCTYPE html> <!-- Balise pour déclarer le type, ici HTML 5 -->
+<!DOCTYPE html>
 <html lang="fr">
-<!-- Balise qui encadre l'intégralité du code avec un attribut qui précise la langue de la page -->
 
 <head> <!--========== Balise d'en-tête de notre contenu ==========-->
     <!--==========  Métadonnées  ==========-->
@@ -64,14 +63,14 @@
     </header> <!-- Ici se termine le mainHeader -->
 
     <main id="mainContent">
+
         <!-- Particles -->
         <div id="particles-js">
             <section class="hero">
                 <div class="cta-wrapper">
                     <img src="/assets/images/portrait.svg" alt="portrait de David" class="cta-image" />
                     <a class="btn" id="cta-btn" href="#contact"><span>&ldquo;</span>Hello, je suis David,<br>
-                        développeur
-                        web<span>&rdquo;</span></a>
+                        développeur web<span>&rdquo;</span></a>
                 </div>
                 <div>
                     <!-- Scroll-down -->
@@ -191,12 +190,11 @@
         <!-- Section Formation -->
         <section id="formation" class="formation-section container-fluid px-0 py-5">
             <div class="container px-4">
-
                 <div class="text-center mb-5">
                     <h2>Formation</h2>
                     <h3>Mon parcours</h3>
                 </div>
-                <!-- Étape 1 -->
+                <!-- XP 1 -->
                 <div class="row align-items-start mb-4">
                     <!-- Dot -->
                     <div class="col-12 col-sm-1 mb-2 mb-sm-0">
@@ -230,8 +228,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Étape 2 -->
+                <!-- XP 2 -->
                 <div class="row align-items-start mb-4">
+                    <!-- Dot -->
                     <div class="col-12 col-sm-1 mb-2 mb-sm-0">
                         <div class="card h-100">
                             <div class="card-wBody d-flex justify-content-center align-items-center">
@@ -239,6 +238,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Résumé -->
                     <div class="col-12 col-sm-4 mb-2 mb-sm-0">
                         <div class="card h-100 summary-card">
                             <div class="card-wBody d-flex align-items-center">
@@ -250,6 +250,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Description -->
                     <div class="col-12 col-sm-7">
                         <div class="card h-100 description-card">
                             <div class="card-body">
@@ -262,6 +263,7 @@
                 </div>
                 <!-- Étape 3 -->
                 <div class="row align-items-start">
+                    <!-- Dot -->
                     <div class="col-12 col-sm-1 mb-2 mb-sm-0">
                         <div class="card h-100">
                             <div class="card-wBody d-flex justify-content-center align-items-center">
@@ -269,6 +271,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Résumé -->
                     <div class="col-12 col-sm-4 mb-2 mb-sm-0">
                         <div class="card h-100 summary-card">
                             <div class="card-wBody d-flex align-items-center">
@@ -280,6 +283,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Description -->
                     <div class="col-12 col-sm-7">
                         <div class="card h-100 description-card">
                             <div class="card-body">
@@ -296,198 +300,271 @@
         <!-- Section Portfolio -->
         <section id="projets" class="portfolio-section container-fluid py-5 text-center px-4 px-md-5">
             <div class="container px-4">
-
                 <div class="text-center mb-5">
                     <h2>Portfolio</h2>
                     <h3>Mes projets personnels et mes collaborations</h3>
                 </div>
-
                 <div class="row mt-4 justify-content-center">
-                    <!-- Card projet #1 -->
+                    <!-- Card projet #1 Choup -->
                     <div class="col-lg-4 col-md-6 mx-5 mb-5">
                         <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
                             <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
-                                <img src="/assets/images/testasupprimer.png" class="project-img img-fluid rounded-4"
+                                <img src="/assets/images/choup/choup1.webp" class="project-img img-fluid rounded-4"
                                     alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
-                                    data-images='["https://picsum.photos/id/1019/1200/800","https://picsum.photos/id/1020/1200/800","https://picsum.photos/id/1021/1200/800"]'/>
+                                    data-images='["/assets/images/choup/choup1.webp","/assets/images/choup/choup2.webp","/assets/images/choup/choup3.webp","/assets/images/choup/choup4.webp","/assets/images/choup/choup5.webp"]' />
                             </div>
                             <div class="card-body d-flex flex-column pt-3 px-4">
                                 <div class="mb-3 d-flex justify-content-end gap-3">
                                     <!-- lien web -->
-                                    <a href="#" class="text-white">
+                                    <a href="https://choupdessinsetnature.fr/index.html" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
                                         <i id="iconPtf" class="bi bi-link-45deg"></i>
                                     </a>
                                     <!-- GitHub -->
-                                    <a href="#" class="text-white">
+                                    <a href="https://github.com/deciraptor/pepidev_projet" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
                                         <i id="iconPtf" class="bi bi-github"></i>
                                     </a>
-                                    <!-- Figma -->
-                                    <a href="#" class="text-white fs-5">
-                                        <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
-                                    </a>
-                                    <!-- canva -->
-                                    <a href="#" class="text-white fs-5">
-                                        <img src="/assets/icons/logos/canva.png" alt="Canva" class="projets-icon2">
-                                    </a>
                                 </div>
-                                <h5>Soundtogether</h5>
-                                <h6>Projet individuel - ISIKA - 2024</h6>
+                                <h5>Choup'Dessins & Nature</h5>
+                                <h6>Projet individuel - Pépi'Dèv - 2024</h6>
                                 <p class="card-text flex-grow-1">
-                                    Une application web de réservation d'événements musicaux en ligne.
-                                    Projet réalisé en groupe de 4 personnes.
+                                    Mon premier projet. Un site web pour une créatrice de contenu, lui permettant de
+                                    présenter ses dessins et de diffuser des articles. Une v2 est prévue pour septembre
+                                    2025, avec un back lui permettant de publier en autonomie.
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0 d-flex gap-2 px-4 pb-4">
-                                <span class="badge badge-project">C#</span>
                                 <span class="badge badge-project">HTML</span>
                                 <span class="badge badge-project">CSS</span>
+                                <span class="badge badge-project">JavaScript</span>
                             </div>
                         </div>
                     </div>
-                    <!-- Card projet #2 -->
+                    <!-- Card projet #2 Annuaire -->
                     <div class="col-lg-4 col-md-6 mx-5 mb-5">
                         <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
                             <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
-                                <img src="/assets/images/testasupprimer.png" class="project-img img-fluid rounded-4"
+                                <img src="/assets/images/choup/choup1.webp" class="project-img img-fluid rounded-4"
                                     alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
-                                    data-images='["https://picsum.photos/id/1016/1200/800","https://picsum.photos/id/1022/1200/800","https://picsum.photos/id/1018/1200/800"]' />
+                                    data-images='["/assets/images/choup/choup1.webp","/assets/images/choup/choup2.webp","/assets/images/choup/choup3.webp","/assets/images/choup/choup4.webp","/assets/images/choup/choup5.webp"]' />
                             </div>
                             <div class="card-body d-flex flex-column pt-3 px-4">
                                 <div class="mb-3 d-flex justify-content-end gap-3">
                                     <!-- lien web -->
-                                    <a href="#" class="text-white">
+                                    <a href="https://choupdessinsetnature.fr/index.html" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
                                         <i id="iconPtf" class="bi bi-link-45deg"></i>
                                     </a>
-                                    <!-- GitHub -->
-                                    <a href="#" class="text-white">
-                                        <i id="iconPtf" class="bi bi-github"></i>
-                                    </a>
-                                    <!-- Figma -->
-                                    <a href="#" class="text-white fs-5">
-                                        <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
-                                    </a>
                                     <!-- canva -->
-                                    <a href="#" class="text-white fs-5">
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
                                         <img src="/assets/icons/logos/canva.png" alt="Canva" class="projets-icon2">
                                     </a>
-
+                                    <!-- Figma -->
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
+                                        <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
+                                    </a>
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/deciraptor/pepidev_projet" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-github"></i>
+                                    </a>
                                 </div>
-
-                                <h5 class="card-title">Soundtogether</h5>
+                                <h5>Annuaire</h5>
+                                <h6>Projet individuel - Pépi'Dèv - 2024</h6>
                                 <p class="card-text flex-grow-1">
-                                    Une application web de réservation d'événements musicaux en ligne.
-                                    Projet réalisé en groupe de 4 personnes.
+                                    Mon premier projet. Un site web pour une créatrice de contenu, lui permettant de
+                                    présenter ses dessins et de diffuser des articles. Une v2 est prévue pour septembre
+                                    2025, avec un back lui permettant de publier en autonomie.
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0 d-flex gap-2 px-4 pb-4">
-                                <span class="badge badge-project">C#</span>
                                 <span class="badge badge-project">HTML</span>
                                 <span class="badge badge-project">CSS</span>
+                                <span class="badge badge-project">JavaScript</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card projet #3 -->
+                    <!-- Card projet #3 SoundTogether -->
                     <div class="col-lg-4 col-md-6 mx-5 mb-5">
                         <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
-
                             <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
-
-
-                                <img src="/assets/images/testasupprimer.png" class="project-img img-fluid rounded-4"
-                                    alt="Capture projet 1" />
-
+                                <img src="/assets/images/choup/choup1.webp" class="project-img img-fluid rounded-4"
+                                    alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
+                                    data-images='["/assets/images/choup/choup1.webp","/assets/images/choup/choup2.webp","/assets/images/choup/choup3.webp","/assets/images/choup/choup4.webp","/assets/images/choup/choup5.webp"]' />
                             </div>
-
                             <div class="card-body d-flex flex-column pt-3 px-4">
                                 <div class="mb-3 d-flex justify-content-end gap-3">
                                     <!-- lien web -->
-                                    <a href="#" class="text-white">
+                                    <a href="https://choupdessinsetnature.fr/index.html" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
                                         <i id="iconPtf" class="bi bi-link-45deg"></i>
                                     </a>
-                                    <!-- GitHub -->
-                                    <a href="#" class="text-white">
-                                        <i id="iconPtf" class="bi bi-github"></i>
+                                    <!-- docs -->
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-journal-code"></i>
                                     </a>
                                     <!-- Figma -->
-                                    <a href="#" class="text-white fs-5">
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
                                         <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
                                     </a>
-                                    <!-- canva -->
-                                    <a href="#" class="text-white fs-5">
-                                        <img src="/assets/icons/logos/canva.png" alt="Canva" class="projets-icon2">
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/deciraptor/pepidev_projet" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-github"></i>
                                     </a>
-
                                 </div>
-
-                                <h5 class="card-title">Soundtogether</h5>
+                                <h5>SoundTogether</h5>
+                                <h6>Projet individuel - Pépi'Dèv - 2024</h6>
                                 <p class="card-text flex-grow-1">
-                                    Une application web de réservation d'événements musicaux en ligne.
-                                    Projet réalisé en groupe de 4 personnes.
+                                    Mon premier projet. Un site web pour une créatrice de contenu, lui permettant de
+                                    présenter ses dessins et de diffuser des articles. Une v2 est prévue pour septembre
+                                    2025, avec un back lui permettant de publier en autonomie.
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0 d-flex gap-2 px-4 pb-4">
-                                <span class="badge badge-project">C#</span>
                                 <span class="badge badge-project">HTML</span>
                                 <span class="badge badge-project">CSS</span>
+                                <span class="badge badge-project">JavaScript</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card projet #4 -->
+                    <!-- Card projet #4 Scriptoria -->
                     <div class="col-lg-4 col-md-6 mx-5 mb-5">
                         <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
-
                             <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
-
-
-                                <img src="/assets/images/testasupprimer.png" class="project-img img-fluid rounded-4"
-                                    alt="Capture projet 1" />
-
+                                <img src="/assets/images/choup/choup1.webp" class="project-img img-fluid rounded-4"
+                                    alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
+                                    data-images='["/assets/images/choup/choup1.webp","/assets/images/choup/choup2.webp","/assets/images/choup/choup3.webp","/assets/images/choup/choup4.webp","/assets/images/choup/choup5.webp"]' />
                             </div>
-
                             <div class="card-body d-flex flex-column pt-3 px-4">
                                 <div class="mb-3 d-flex justify-content-end gap-3">
                                     <!-- lien web -->
-                                    <a href="#" class="text-white">
+                                    <a href="https://choupdessinsetnature.fr/index.html" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
                                         <i id="iconPtf" class="bi bi-link-45deg"></i>
                                     </a>
-                                    <!-- GitHub -->
-                                    <a href="#" class="text-white">
-                                        <i id="iconPtf" class="bi bi-github"></i>
-                                    </a>
-                                    <!-- Figma -->
-                                    <a href="#" class="text-white fs-5">
-                                        <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
-                                    </a>
                                     <!-- canva -->
-                                    <a href="#" class="text-white fs-5">
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
                                         <img src="/assets/icons/logos/canva.png" alt="Canva" class="projets-icon2">
                                     </a>
-
+                                    <!-- Figma -->
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
+                                        <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
+                                    </a>
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/deciraptor/pepidev_projet" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-github"></i>
+                                    </a>
                                 </div>
-
-                                <h5 class="card-title">Soundtogether</h5>
+                                <h5>Scriptoria</h5>
+                                <h6>Projet individuel - Pépi'Dèv - 2024</h6>
                                 <p class="card-text flex-grow-1">
-                                    2024<br>
-                                    Une application web de réservation d'événements musicaux en ligne.
-                                    Projet réalisé en groupe de 4 personnes.
+                                    Mon premier projet. Un site web pour une créatrice de contenu, lui permettant de
+                                    présenter ses dessins et de diffuser des articles. Une v2 est prévue pour septembre
+                                    2025, avec un back lui permettant de publier en autonomie.
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0 d-flex gap-2 px-4 pb-4">
-                                <span class="badge badge-project">C#</span>
                                 <span class="badge badge-project">HTML</span>
                                 <span class="badge badge-project">CSS</span>
+                                <span class="badge badge-project">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card projet #5 Tilleuil -->
+                    <div class="col-lg-4 col-md-6 mx-5 mb-5">
+                        <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
+                            <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
+                                <img src="/assets/images/choup/choup1.webp" class="project-img img-fluid rounded-4"
+                                    alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
+                                    data-images='["/assets/images/choup/choup1.webp","/assets/images/choup/choup2.webp","/assets/images/choup/choup3.webp","/assets/images/choup/choup4.webp","/assets/images/choup/choup5.webp"]' />
+                            </div>
+                            <div class="card-body d-flex flex-column pt-3 px-4">
+                                <div class="mb-3 d-flex justify-content-end gap-3">
+                                    <!-- lien web -->
+                                    <a href="https://choupdessinsetnature.fr/index.html" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-link-45deg"></i>
+                                    </a>
+                                    <!-- canva -->
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
+                                        <img src="/assets/icons/logos/canva.png" alt="Canva" class="projets-icon2">
+                                    </a>
+                                    <!-- Figma -->
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
+                                        <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
+                                    </a>
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/deciraptor/pepidev_projet" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                                <h5>Tilleuil HBC</h5>
+                                <h6>Projet individuel - Pépi'Dèv - 2024</h6>
+                                <p class="card-text flex-grow-1">
+                                    Mon premier projet. Un site web pour une créatrice de contenu, lui permettant de
+                                    présenter ses dessins et de diffuser des articles. Une v2 est prévue pour septembre
+                                    2025, avec un back lui permettant de publier en autonomie.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex gap-2 px-4 pb-4">
+                                <span class="badge badge-project">HTML</span>
+                                <span class="badge badge-project">CSS</span>
+                                <span class="badge badge-project">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card projet #6 Portfolio -->
+                    <div class="col-lg-4 col-md-6 mx-5 mb-5">
+                        <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
+                            <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
+                                <img src="/assets/images/choup/choup1.webp" class="project-img img-fluid rounded-4"
+                                    alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
+                                    data-images='["/assets/images/choup/choup1.webp","/assets/images/choup/choup2.webp","/assets/images/choup/choup3.webp","/assets/images/choup/choup4.webp","/assets/images/choup/choup5.webp"]' />
+                            </div>
+                            <div class="card-body d-flex flex-column pt-3 px-4">
+                                <div class="mb-3 d-flex justify-content-end gap-3">
+                                    <!-- lien web -->
+                                    <a href="https://choupdessinsetnature.fr/index.html" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-link-45deg"></i>
+                                    </a>
+                                    <!-- canva -->
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
+                                        <img src="/assets/icons/logos/canva.png" alt="Canva" class="projets-icon2">
+                                    </a>
+                                    <!-- Figma -->
+                                    <a href="#" class="text-white fs-5" target="_blank" rel="noopener noreferrer">
+                                        <img src="/assets/icons/logos/figma.png" alt="Figma" class="projets-icon1">
+                                    </a>
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/deciraptor/pepidev_projet" class="text-white"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i id="iconPtf" class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                                <h5>David Portfolio</h5>
+                                <h6>Projet individuel - Pépi'Dèv - 2024</h6>
+                                <p class="card-text flex-grow-1">
+                                    Mon premier projet. Un site web pour une créatrice de contenu, lui permettant de
+                                    présenter ses dessins et de diffuser des articles. Une v2 est prévue pour septembre
+                                    2025, avec un back lui permettant de publier en autonomie.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex gap-2 px-4 pb-4">
+                                <span class="badge badge-project">HTML</span>
+                                <span class="badge badge-project">CSS</span>
+                                <span class="badge badge-project">JavaScript</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
         <!-- Fin section Portfolio -->
-
 
         <!-- Modal + Carousel -->
         <div class="modal fade" id="carouselModal" tabindex="-1" aria-hidden="true">
