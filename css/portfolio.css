@@ -81,6 +81,18 @@ h4 {
     color: var(--color-fontAccent)
 }
 
+h5 {
+    color: var(--color-fontAccent);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h6 {
+    color: var(--color-fontPrimary);
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
 /* ===== Header ===== */
 
 header {
@@ -372,15 +384,10 @@ header {
     height: 29px;
 }
 
-.card-title {
-    color: var(--color-fontAccent);
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
 .card-text {
     font-size: 0.9rem;
     font-weight: 500;
+    padding-top: 0.5em;
 }
 
 .badge-project {
@@ -397,6 +404,13 @@ header {
 
 .project-img {
     cursor: pointer;
+}
+
+#galleryCarousel .carousel-item img {
+    height: 65vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* ===== Footer ===== */
