@@ -395,6 +395,9 @@ header {
     min-width: 4rem;
 }
 
+.project-img {
+    cursor: pointer;
+}
 
 /* ===== Footer ===== */
 #mainFooter {

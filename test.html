@@ -301,13 +301,15 @@
                     <h2>Portfolio</h2>
                     <h3>Mes projets personnels et mes collaborations</h3>
                 </div>
+
                 <div class="row mt-4 justify-content-center">
                     <!-- Card projet #1 -->
                     <div class="col-lg-4 col-md-6 mx-5 mb-5">
                         <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
                             <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
                                 <img src="/assets/images/testasupprimer.png" class="project-img img-fluid rounded-4"
-                                    alt="Capture projet 1" />
+                                    alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
+                                    data-images='["https://picsum.photos/id/1019/1200/800","https://picsum.photos/id/1020/1200/800","https://picsum.photos/id/1021/1200/800"]'/>
                             </div>
                             <div class="card-body d-flex flex-column pt-3 px-4">
                                 <div class="mb-3 d-flex justify-content-end gap-3">
@@ -346,7 +348,8 @@
                         <div class="card bg-card border-0 rounded-4 overflow-hidden h-100 text-white">
                             <div class="card-image-wrapper d-flex justify-content-center align-items-center pt-4 px-4">
                                 <img src="/assets/images/testasupprimer.png" class="project-img img-fluid rounded-4"
-                                    alt="Capture projet 1" />
+                                    alt="Capture projet 1" data-bs-toggle="modal" data-bs-target="#carouselModal"
+                                    data-images='["https://picsum.photos/id/1016/1200/800","https://picsum.photos/id/1022/1200/800","https://picsum.photos/id/1018/1200/800"]' />
                             </div>
                             <div class="card-body d-flex flex-column pt-3 px-4">
                                 <div class="mb-3 d-flex justify-content-end gap-3">
@@ -477,10 +480,41 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- Fin section Portfolio -->
 
-                    <!-- Fin section Portfolio -->
+
+        <!-- Modal + Carousel -->
+        <div class="modal fade" id="carouselModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                            aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-inner">
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
     </main> <!-- Ici se termine mainContent -->
 
@@ -493,6 +527,8 @@
     <script src="js/main.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/particles.js"></script>
+
+
 
 </body> <!--========== Ici se termine le contenu de la page ==========-->
 
