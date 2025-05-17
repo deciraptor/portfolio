@@ -43,7 +43,6 @@
     src: url('/assets/fonts/Montserrat-Black.ttf') format('truetype');
 }
 
-
 /* ===== Style appliqué à l'ensemble du contenu ===== */
 
 html {
@@ -127,10 +126,11 @@ header {
     border: none !important;
     color: var(--color-bgPrimary) !important;
     font-size: var(--btn-font-size);
+    border-radius: 12px;
 }
 
 .btn-contact:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
 }
 
 /* Toggler mobile personnalisé */
@@ -423,16 +423,60 @@ header {
     object-fit: contain;
 }
 
+/* ===== Contact ===== */
+
+.contact-section {
+    background-color: var(--color-bgPrimary);
+    color: var(--color-fontPrimary);
+    position: auto;
+}
+
+.contact-button {
+    width: 25%;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    color: var(--color-fontPrimary);
+    background-color: var(--color-bgPrimary);
+    border: 3px solid var(--color-btn);
+    border-radius: 1rem;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+    z-index: 20;
+}
+
+.contact-button:hover {
+    background-color: var(--color-btn);
+}
+
+.btn-cv {
+    width: 25%;
+    background-color: var(--color-btn) !important;
+    border: none !important;
+    color: var(--color-bgPrimary) !important;
+    font-size: var(--btn-font-size);
+    font-weight: 700;
+    border-radius: 12px;
+    height: 53.98px;
+    z-index: 20;
+}
+
+.btn-cv:hover {
+    filter: brightness(0.8);
+}
+
 /* ===== Footer ===== */
 #mainFooter {
-    position: auto;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: pink;
+    background-color: #191919;
 }
 
 /* ===== Media ===== */
+
 /* Desktop */
 @media (min-width: 992px) {
     .navbar-nav .nav-item+.nav-item {
@@ -456,5 +500,14 @@ header {
 
     .lead {
         font-size: 1rem;
+    }
+
+    .contact-button {
+        font-size: 0.7rem;
+    }
+
+    .btn-cv {
+        font-size: 0.7rem;
+        height: 75.58px;
     }
 }
