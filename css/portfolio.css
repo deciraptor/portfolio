@@ -390,7 +390,12 @@ header {
 
 .projets-icon2 {
     width: auto;
-    height: 29px;
+    height: 24px;
+}
+
+.projets-icon3 {
+    width: auto;
+    height: 27px;
 }
 
 .card-text {
@@ -412,7 +417,7 @@ header {
 }
 
 #galleryCarousel .carousel-item img {
-    height: 55vh;
+    height: 65vh;
     width: auto;
     max-width: 100%;
     object-fit: contain;
