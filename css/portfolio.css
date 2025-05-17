@@ -358,11 +358,20 @@ header {
 
 .card-image-wrapper {
     background-color: #201f2e;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .project-img {
     filter: brightness(0.8);
     /* 0 = noir total, 1 = image d'origine */
+    cursor: pointer;
+    display: block;
+    /* supprime l’espace blanc sous l’image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-img:hover {
@@ -402,12 +411,8 @@ header {
     min-width: 4rem;
 }
 
-.project-img {
-    cursor: pointer;
-}
-
 #galleryCarousel .carousel-item img {
-    height: 65vh;
+    height: 55vh;
     width: auto;
     max-width: 100%;
     object-fit: contain;
