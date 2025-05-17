@@ -455,11 +455,12 @@ header {
     background-color: var(--color-btn) !important;
     border: none !important;
     color: var(--color-bgPrimary) !important;
-    font-size: var(--btn-font-size);
+    font-size: 1.2rem;
     font-weight: 700;
     border-radius: 12px;
     height: 53.98px;
     z-index: 20;
+    padding-top: 0.8rem;
 }
 
 .btn-cv:hover {
