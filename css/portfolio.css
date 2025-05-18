@@ -3,9 +3,9 @@
     --color-bgPrimary: #191919;
     --color-bgAccent: #201f2e;
     --color-fontPrimary: #ffffff;
-    --color-fontAccent: #19c79a;
-    --color-stroke: #19c79a;
-    --color-btn: #19c79a;
+    --color-fontAccent: #0f9874;
+    --color-stroke: #0f9874;
+    --color-btn: #0f9874;
     /* Espaces */
     --nav-spacing: 1.5rem;
     /* Taille police */
@@ -184,12 +184,12 @@ header {
     width: 75%;
     max-width: 70vw;
     height: auto;
-    margin-left: 0.8rem;
+    /* margin-left: 0.2rem; */
     filter: brightness(0.9);
 }
 
 #cta-btn {
-    width: 45%;
+    width: 75%;
     padding: 0.6rem;
     font-size: 1.2rem;
     color: var(--color-fontPrimary);
@@ -203,14 +203,15 @@ header {
     cursor: default;
 }
 
-/* #cta-btn:hover {
-    background-color: var(--color-btn);
-} */
+#cta-btn:hover {
+    box-shadow: 0 0 8px var(--color-btn);
+    color: var(--color-btn);
+}
 
 .glow {
-    color: white;
-    text-shadow: 0 0 8px #19c79a, 0 0 12px #19c79a;
-  }
+    color: var(--color-fontPrimary);
+    text-shadow: 0 0 8px var(--color-btn), 0 0 12px var(--color-btn);
+}
 
 .scroll-down {
     position: absolute;
@@ -549,6 +550,19 @@ header {
 
     .btn-cv {
         font-size: 0.7rem;
-        height: 75.58px;
+        height: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
     }
 }
