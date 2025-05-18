@@ -1,11 +1,11 @@
 :root {
     /* Couleurs */
-    --color-bgPrimary: #e1eff6;
-    --color-bgAccent: #1f15af;
-    --color-fontPrimary: #191919;
-    --color-fontAccent: #656aff;
-    --color-stroke: #656aff;
-    --color-btn: #656aff;
+    --color-bgPrimary: #191919;
+    --color-bgAccent: #201f2e;
+    --color-fontPrimary: #ffffff;
+    --color-fontAccent: #19c79a;
+    --color-stroke: #19c79a;
+    --color-btn: #19c79a;
     /* Espaces */
     --nav-spacing: 1.5rem;
     /* Taille police */
@@ -377,7 +377,7 @@ header {
     /* 0 = noir total, 1 = image d'origine */
 }
 
-#iconPtf {
+.iconPtf {
     font-size: 24px;
 }
 
@@ -426,7 +426,6 @@ header {
 .contact-section {
     background-color: var(--color-bgPrimary);
     color: var(--color-fontPrimary);
-    position: auto;
 }
 
 .contact-button {

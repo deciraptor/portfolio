@@ -426,7 +426,6 @@ header {
 .contact-section {
     background-color: var(--color-bgPrimary);
     color: var(--color-fontPrimary);
-    position: auto;
 }
 
 .contact-button {
