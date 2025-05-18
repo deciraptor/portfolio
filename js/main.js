@@ -33,3 +33,13 @@ modalEl.addEventListener('show.bs.modal', event => {
   `).join('');
 });
 
+// scroll AOS 
+
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    once: true,            // L’animation ne se joue qu’une fois
+    duration: 800,         // Durée des animations
+    easing: 'ease-in-out'  // Effet de transition
+  });
+});
+

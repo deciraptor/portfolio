@@ -337,6 +337,13 @@ header {
     font-weight: 500;
 }
 
+.card-body-f:hover {
+    box-shadow: 0 0 10px var(--color-btn);
+    transition: box-shadow 0.3s ease;
+    border-radius: 20px;
+    filter: brightness(0.8);
+}
+
 .card-wBody {
     background-color: var(--color-bgPrimary);
     padding-left: 0.9rem;
