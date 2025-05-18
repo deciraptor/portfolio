@@ -532,7 +532,7 @@ header {
 /* Mobile */
 @media (max-width: 575.98px) {
     #cta-btn {
-        font-size: 0.7rem;
+        font-size: 1rem;
         /* plus petit que la valeur par défaut */
     }
 
