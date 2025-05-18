@@ -121,6 +121,14 @@ header {
     font-size: var(--nav-font-size);
 }
 
+.navbar-brand:hover {
+    filter: brightness(0.8);
+}
+
+.nav-link:hover {
+    filter: brightness(0.8);
+}
+
 .btn-contact {
     background-color: var(--color-btn) !important;
     border: none !important;
@@ -192,11 +200,12 @@ header {
         background-color 0.3s ease,
         color 0.3s ease,
         transform 0.2s ease;
+    cursor: default;
 }
 
-#cta-btn:hover {
+/* #cta-btn:hover {
     background-color: var(--color-btn);
-}
+} */
 
 .scroll-down {
     position: absolute;
@@ -264,6 +273,7 @@ header {
     justify-content: center;
     gap: 0.75rem;
     padding-top: 1.2rem;
+    cursor: help;
 }
 
 .skill-icons img {
@@ -422,6 +432,21 @@ header {
     max-width: 100%;
     object-fit: contain;
 }
+
+/* Flèches du carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(64%) sepia(93%) saturate(392%) hue-rotate(120deg) brightness(150%) contrast(85%);
+    /* Exemple de filtre pour teinte verte type #19c79a */
+    /* Tu peux modifier la teinte en changeant "hue-rotate(...)" ou tester sur https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+/* Croix de fermeture du modal */
+.btn-close {
+    filter: invert(64%) sepia(93%) saturate(392%) hue-rotate(120deg) brightness(96%) contrast(85%);
+    /* Même filtre pour harmoniser avec les flèches */
+}
+
 
 /* ===== Contact ===== */
 
