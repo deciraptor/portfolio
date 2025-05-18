@@ -168,14 +168,16 @@ header {
     transform: translateY(-20%);
     /* remonte de 10% de sa propre hauteur */
     z-index: 10;
+    margin-top: 3rem;
 }
 
 .cta-image {
     display: block;
-    width: 70%;
+    width: 75%;
     max-width: 70vw;
     height: auto;
-    margin-left: 1.3rem;
+    margin-left: 0.8rem;
+    filter: brightness(0.9);
 }
 
 #cta-btn {
@@ -198,7 +200,7 @@ header {
 
 .scroll-down {
     position: absolute;
-    bottom: 10rem;
+    bottom: 8rem;
     /*  ajustez selon l’espacement souhaité */
     left: 50%;
     transform: translateX(-50%);
@@ -424,7 +426,7 @@ header {
 /* ===== Contact ===== */
 
 .contact-section {
-    background-color: var(--color-bgPrimary);
+    background-color: var(--color-bgAccent);
     color: var(--color-fontPrimary);
 }
 
@@ -494,6 +496,10 @@ header {
     #cta-btn {
         font-size: 0.7rem;
         /* plus petit que la valeur par défaut */
+    }
+
+    .cta-image {
+        width: 90%;
     }
 
     .lead {
