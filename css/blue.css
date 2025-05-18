@@ -3,9 +3,9 @@
     --color-bgPrimary: #191919;
     --color-bgAccent: #201f2e;
     --color-fontPrimary: #ffffff;
-    --color-fontAccent: #19c79a;
-    --color-stroke: #19c79a;
-    --color-btn: #19c79a;
+    --color-fontAccent: #0d6efd;
+    --color-stroke: #0d6efd;
+    --color-btn: #0d6efd;
     /* Espaces */
     --nav-spacing: 1.5rem;
     /* Taille police */
@@ -207,11 +207,6 @@ header {
     background-color: var(--color-btn);
 } */
 
-.glow {
-    color: white;
-    text-shadow: 0 0 8px #19c79a, 0 0 12px #19c79a;
-  }
-
 .scroll-down {
     position: absolute;
     bottom: 8rem;
@@ -321,7 +316,7 @@ header {
     height: 1rem;
     background-color: var(--color-btn);
     border-radius: 50%;
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
 }
 
 .card {

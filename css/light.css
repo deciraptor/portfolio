@@ -1,11 +1,11 @@
 :root {
     /* Couleurs */
-    --color-bgPrimary: #191919;
-    --color-bgAccent: #201f2e;
-    --color-fontPrimary: #ffffff;
-    --color-fontAccent: #19c79a;
-    --color-stroke: #19c79a;
-    --color-btn: #19c79a;
+    --color-bgPrimary: #f1f2eb;
+    --color-bgAccent: #ccd7e4;
+    --color-fontPrimary: #191919;
+    --color-fontAccent: #656aff;
+    --color-stroke: #656aff;
+    --color-btn: #656aff;
     /* Espaces */
     --nav-spacing: 1.5rem;
     /* Taille police */
@@ -122,11 +122,11 @@ header {
 }
 
 .navbar-brand:hover {
-    filter: brightness(0.8);
+    filter: brightness(1.8);
 }
 
 .nav-link:hover {
-    filter: brightness(0.8);
+    filter: brightness(0.4);
 }
 
 .btn-contact {
@@ -207,11 +207,6 @@ header {
     background-color: var(--color-btn);
 } */
 
-.glow {
-    color: white;
-    text-shadow: 0 0 8px #19c79a, 0 0 12px #19c79a;
-  }
-
 .scroll-down {
     position: absolute;
     bottom: 8rem;
@@ -269,7 +264,7 @@ header {
 }
 
 .skill-card:hover {
-    filter: brightness(1.4);
+    filter: brightness(0.9);
 }
 
 .skill-icons {
@@ -321,7 +316,7 @@ header {
     height: 1rem;
     background-color: var(--color-btn);
     border-radius: 50%;
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
 }
 
 .card {
@@ -379,7 +374,7 @@ header {
 }
 
 .project-img {
-    filter: brightness(0.8);
+    filter: brightness(1);
     /* 0 = noir total, 1 = image d'origine */
     cursor: pointer;
     display: block;
@@ -390,7 +385,7 @@ header {
 }
 
 .project-img:hover {
-    filter: brightness(1);
+    filter: brightness(0.9);
     /* 0 = noir total, 1 = image d'origine */
 }
 
@@ -503,6 +498,7 @@ header {
     left: 0;
     width: 100%;
     background-color: var(--color-bgPrimary);
+    color: #191919;
 }
 
 /* ===== Media ===== */
