@@ -1,18 +1,27 @@
 // scrollFunction Header
 
-window.onscroll = function () { scrollFunction() };
+const header = document.getElementById("mainHeader");
+const MOBILE_BREAKPOINT = 1024;
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("mainHeader").style.backgroundColor = "#191919";
-    document.getElementById("mainHeader").style.borderBottom = "1px solid #0f9874";
+function updateHeaderBg() {
+  const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
+  const scrolled   = window.scrollY > 50;
 
+  if (isMobile || scrolled) {
+    // Sur mobile, ou desktop scrollé (>50px) → fond et bord
+    header.style.backgroundColor = "#191919";
+    header.style.borderBottom    = "1px solid #0f9874";
   } else {
-    document.getElementById("mainHeader").style.backgroundColor = "transparent";
-    document.getElementById("mainHeader").style.borderBottom = "none";
-
+    // Desktop non-scrolled → transparent
+    header.style.backgroundColor = "transparent";
+    header.style.borderBottom    = "none";
   }
 }
+
+// Écouteurs pour scroll, resize et chargement initial
+window.addEventListener("scroll", updateHeaderBg);
+window.addEventListener("resize", updateHeaderBg);
+window.addEventListener("DOMContentLoaded", updateHeaderBg);
 
 // carrousel 
 

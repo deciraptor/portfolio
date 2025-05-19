@@ -531,6 +531,7 @@ header {
 
 /* Mobile */
 @media (max-width: 575.98px) {
+
     #cta-btn {
         font-size: 1rem;
         /* plus petit que la valeur par défaut */
@@ -551,6 +552,10 @@ header {
     .btn-cv {
         font-size: 0.7rem;
         height: 100%;
+    }
+
+    .badge-project {
+        font-size: 0.6rem;
     }
 }
 
