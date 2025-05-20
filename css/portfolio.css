@@ -510,18 +510,17 @@ header {
 .form-contact {
     position: relative;
     z-index: 20;
-    background-color: var(--color-bgPrimary);
     color: var(--color-fontPrimary);
 }
 
 .form-label {
-    color: var(--color-fontPrimary);
+    color: var(--color-fontAccent);
     font-weight: 400;
     margin-bottom: 0.3rem;
 }
 
 .form-control {
-    background-color: var(--color-bgAccent);
+    background-color: var(--color-bgPrimary);
     color: var(--color-fontPrimary);
     border-radius: 12px;
     font-size: 0.9rem;

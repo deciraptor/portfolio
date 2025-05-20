@@ -53,37 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-// scroll spy 
-
-const links = Array.from(document.querySelectorAll("#mainNavbar .nav-link"));
-const sections = links.map(a =>
-  document.querySelector(a.getAttribute("href"))
-);
-
-function updateActive() {
-  const offset = 63; // même valeur que data-bs-offset
-  const scrollPos = window.scrollY + offset;
-  // on prend la section dont le milieu est le plus proche de scrollPos
-  let idx = sections.findIndex((sec, i) => {
-    const rect = sec.getBoundingClientRect();
-    const top = window.scrollY + rect.top;
-    const bottom = top + rect.height;
-    return scrollPos >= top && scrollPos < bottom;
-  });
-  if (idx === -1) {
-    // si on est tout en haut, on enlève tous
-    links.forEach(a => a.classList.remove("active"));
-    return;
-  }
-  links.forEach(a => a.classList.toggle("active",
-    a.getAttribute("href") === `#${sections[idx].id}`));
-}
-
-window.addEventListener("scroll", updateActive, { passive: true });
-updateActive();
-
-
 // form 
 
 const form = document.getElementById('contact-form');
@@ -115,17 +84,67 @@ if (form) {
 
 // bouton focus
 
-document.addEventListener('DOMContentLoaded', function () {
-  // ... ton autre JS ici ...
+document.addEventListener("DOMContentLoaded", function () {
+  const boutonMail = document.getElementById("focus-prenom");
+  const formulaire = document.getElementById("formulaire-contact");
+  const inputPrenom = document.getElementById("prenom");
 
-  // Focus sur le champ Prénom au clic du bouton
-  const focusBtn = document.getElementById('focus-prenom');
-  const prenomInput = document.getElementById('prenom');
-  if (focusBtn && prenomInput) {
-    focusBtn.addEventListener('click', function () {
-      prenomInput.focus();
-      // Pour les lecteurs d'écran/accessibilité, scroll dans le formulaire si besoin :
-      prenomInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
-  }
+  boutonMail.addEventListener("click", function () {
+    if (formulaire.classList.contains("d-none")) {
+      // Affiche et focus
+      formulaire.classList.remove("d-none");
+      formulaire.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        inputPrenom.focus();
+      }, 200);
+    } else {
+      // Masque le formulaire
+      formulaire.classList.add("d-none");
+    }
+  });
 });
+
+// scroll-spy
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('#mainNavbar .nav-link');
+
+  function onScroll() {
+      // Debug
+      console.log('innerHeight:', window.innerHeight, 
+          'pageYOffset:', window.pageYOffset, 
+          'scrollHeight:', document.documentElement.scrollHeight, 
+          'sum:', window.innerHeight + window.pageYOffset);
+
+      let found = false;
+      const atBottom = (window.innerHeight + window.pageYOffset) >= (document.documentElement.scrollHeight - 2);
+
+      if (atBottom) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          const contactLink = document.querySelector('#mainNavbar .nav-link[href="#contact"]');
+          if (contactLink) contactLink.classList.add('active');
+          found = true;
+      } else {
+          let currentSection = null;
+          sections.forEach(section => {
+              const rect = section.getBoundingClientRect();
+              if (rect.top <= window.innerHeight * 0.25 && rect.bottom > window.innerHeight * 0.25) {
+                  currentSection = section;
+              }
+          });
+          navLinks.forEach(link => link.classList.remove('active'));
+          if (currentSection) {
+              const id = currentSection.getAttribute('id');
+              const activeLink = document.querySelector(`#mainNavbar .nav-link[href="#${id}"]`);
+              if (activeLink) activeLink.classList.add('active');
+              found = true;
+          }
+      }
+      if (!found) navLinks.forEach(link => link.classList.remove('active'));
+  }
+
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+});
+

@@ -29,7 +29,7 @@
 
 </head>
 
-<body id="mainBody" data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="0" tabindex="0">
+<body id="mainBody">
     <!--========== Balise qui comprend le contenu de la page ==========-->
 
     <header id="mainHeader">
@@ -620,54 +620,56 @@
                         Consulter mon CV
                     </a>
                 </div>
+
+                <!-- Formulaire de contact stylisé -->
+                <div class="row justify-content-center form-contact py-4 d-none" id="formulaire-contact">
+                    <div class="text-center mb-5">
+                        <h2 id="contact-title">Formulaire</h2>
+                        <h3>Entrons en contact.</h3>
+                    </div>
+                    <div class="col-md-8 col-lg-6">
+                        <form action="https://formspree.io/f/xzzroyvg" method="POST" id="contact-form"
+                            class="p-4 rounded-4" autocomplete="off">
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3 text-start">
+                                    <label for="prenom" class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom" name="Prénom" required
+                                        autocomplete="given-name" placeholder="Votre prénom">
+                                </div>
+                                <div class="col-md-6 mb-3 text-start">
+                                    <label for="name" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="name" name="Nom" required
+                                        autocomplete="family-name" placeholder="Votre nom">
+                                </div>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="Email" required
+                                    autocomplete="email" placeholder="Votre adresse email">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="objet" class="form-label">Objet</label>
+                                <input type="text" class="form-control" id="objet" name="Objet" required
+                                    placeholder="Sujet de votre message">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="Message" rows="4" required
+                                    placeholder="Votre message..."></textarea>
+                            </div>
+                            <div id="form-success" class="alert alert-success d-none" role="alert">
+                                Merci pour votre message, je vous répondrai rapidement !
+                            </div>
+                            <button type="submit" class="btn contact-button mt-3 w-100">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </section>
-
-        <!-- Formulaire de contact stylisé -->
-        <div class="row justify-content-center form-contact py-5">
-            <div class="col-md-8 col-lg-6">
-                <form action="https://formspree.io/f/xzzroyvg" method="POST" id="contact-form"
-                    class="p-4 rounded-4" autocomplete="off">
-
-                    <div class="row">
-                        <div class="col-md-6 mb-3 text-start">
-                            <label for="prenom" class="form-label">Prénom</label>
-                            <input type="text" class="form-control" id="prenom" name="Prénom" required
-                                autocomplete="given-name" placeholder="Votre prénom">
-                        </div>
-                        <div class="col-md-6 mb-3 text-start">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="name" name="Nom" required
-                                autocomplete="family-name" placeholder="Votre nom">
-                        </div>
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="Email" required autocomplete="email"
-                            placeholder="Votre adresse email">
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label for="objet" class="form-label">Objet</label>
-                        <input type="text" class="form-control" id="objet" name="Objet" required
-                            placeholder="Sujet de votre message">
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="Message" rows="4" required
-                            placeholder="Votre message..."></textarea>
-                    </div>
-                    <div id="form-success" class="alert alert-success d-none" role="alert">
-                        Merci pour votre message, je vous répondrai rapidement !
-                    </div>
-                    <button type="submit" class="btn contact-button mt-3 w-100">
-                        Envoyer le message
-                    </button>
-                </form>
-            </div>
-        </div>
-
-
-
         <!-- Fin section Contact -->
 
     </main> <!-- Ici se termine mainContent -->
