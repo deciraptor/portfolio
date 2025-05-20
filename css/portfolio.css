@@ -122,14 +122,16 @@ header {
 }
 
 .navbar-brand:hover {
-    filter: brightness(0.8);
+    filter: brightness(1.2);
 }
 
 .nav-link:hover {
-    filter: brightness(0.8);
+    filter: brightness(0.7);
 }
 
-.btn-contact {
+/* Scrollspy */
+
+#mainNavbar .nav-link.active {
     background-color: var(--color-btn) !important;
     border: none !important;
     color: var(--color-bgPrimary) !important;
@@ -137,8 +139,8 @@ header {
     border-radius: 12px;
 }
 
-.btn-contact:hover {
-    filter: brightness(0.8);
+#mainNavbar .nav-link.active:hover {
+    filter: brightness(1.2);
 }
 
 /* Toggler mobile personnalisé */
@@ -460,7 +462,6 @@ header {
     /* Même filtre pour harmoniser avec les flèches */
 }
 
-
 /* ===== Contact ===== */
 
 .contact-section {
@@ -501,7 +502,47 @@ header {
 }
 
 .btn-cv:hover {
+    filter: brightness(1.2);
+}
+
+/* ===== Formulaire ===== */
+
+.form-contact {
+    position: relative;
+    z-index: 20;
+    background-color: var(--color-bgPrimary);
+    color: var(--color-fontPrimary);
+}
+
+.form-label {
+    color: var(--color-fontPrimary);
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.form-control {
+    background-color: var(--color-bgAccent);
+    color: var(--color-fontPrimary);
+    border-radius: 12px;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.form-control:focus {
+    background-color: var(--color-bgAccent);
+    box-shadow: 0 0 10px var(--color-btn);
+    color: var(--color-fontAccent);
+    border-radius: 12px;
     filter: brightness(0.8);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-fontPrimary) !important;    
+    opacity: 1 !important;
+    font-style: italic !important;
+    font-size: 0.9rem;
+    filter: brightness(0.7);
 }
 
 /* ===== Footer ===== */
@@ -570,4 +611,26 @@ header {
         opacity: 1 !important;
         transform: none !important;
     }
+}
+
+/* ===== Adoucir le scroll spy ===== */
+#mainNavbar .nav-link {
+    border-radius: 12px !important;
+    /* même rayon que .btn-contact */
+    padding: 0.5rem 1rem;
+    /* même padding que .btn-contact */
+    transition: background-color 0.3s;
+    /* seulement la couleur du fond */
+}
+
+#mainNavbar .nav-link.active {
+    background-color: var(--color-btn) !important;
+    color: var(--color-bgPrimary) !important;
+}
+
+/* On désactive toute transition sur le border-radius ou le padding */
+#mainNavbar .nav-link,
+#mainNavbar .nav-link.active {
+    transition-property: background-color;
+    /* on ne liste que ce qu’on veut animer */
 }

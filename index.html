@@ -29,7 +29,8 @@
 
 </head>
 
-<body> <!--========== Balise qui comprend le contenu de la page ==========-->
+<body id="mainBody" data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="0" tabindex="0">
+    <!--========== Balise qui comprend le contenu de la page ==========-->
 
     <header id="mainHeader">
         <!-- Navbar -->
@@ -60,7 +61,7 @@
                             <a class="nav-link" href="#projets">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-contact" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -611,10 +612,9 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-center gap-3 mt-4 mb-4">
                     <!-- Bouton mail -->
-                    <a href="mailto:dethevenaux@gmail.com" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-outline-contact contact-button">
+                    <button type="button" id="focus-prenom" class="btn btn-outline-contact contact-button">
                         M'envoyer un mail
-                    </a>
+                    </button>
                     <!-- Bouton téléchargement CV -->
                     <a href="assets/ethevenaux_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cv">
                         Consulter mon CV
@@ -622,6 +622,52 @@
                 </div>
             </div>
         </section>
+
+        <!-- Formulaire de contact stylisé -->
+        <div class="row justify-content-center form-contact py-5">
+            <div class="col-md-8 col-lg-6">
+                <form action="https://formspree.io/f/xzzroyvg" method="POST" id="contact-form"
+                    class="p-4 rounded-4" autocomplete="off">
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3 text-start">
+                            <label for="prenom" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="prenom" name="Prénom" required
+                                autocomplete="given-name" placeholder="Votre prénom">
+                        </div>
+                        <div class="col-md-6 mb-3 text-start">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" name="Nom" required
+                                autocomplete="family-name" placeholder="Votre nom">
+                        </div>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="Email" required autocomplete="email"
+                            placeholder="Votre adresse email">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="objet" class="form-label">Objet</label>
+                        <input type="text" class="form-control" id="objet" name="Objet" required
+                            placeholder="Sujet de votre message">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="Message" rows="4" required
+                            placeholder="Votre message..."></textarea>
+                    </div>
+                    <div id="form-success" class="alert alert-success d-none" role="alert">
+                        Merci pour votre message, je vous répondrai rapidement !
+                    </div>
+                    <button type="submit" class="btn contact-button mt-3 w-100">
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+
         <!-- Fin section Contact -->
 
     </main> <!-- Ici se termine mainContent -->
