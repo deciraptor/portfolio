@@ -537,12 +537,24 @@ header {
 
 input::placeholder,
 textarea::placeholder {
-    color: var(--color-fontPrimary) !important;    
+    color: var(--color-fontPrimary) !important;
     opacity: 1 !important;
     font-style: italic !important;
     font-size: 0.9rem;
     filter: brightness(0.7);
 }
+
+#form-success {
+    background-color: var(--color-btn) !important;
+    border: none !important;
+    color: var(--color-bgPrimary) !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 12px;
+    z-index: 20;
+    padding-top: 0.8rem;
+}
+
 
 /* ===== Footer ===== */
 #mainFooter {
