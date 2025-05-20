@@ -530,7 +530,7 @@ header {
 .form-control:focus {
     background-color: var(--color-bgAccent);
     box-shadow: 0 0 10px var(--color-btn);
-    color: var(--color-fontAccent);
+    color: var(--color-fontPrimary);
     border-radius: 12px;
     filter: brightness(0.8);
 }
