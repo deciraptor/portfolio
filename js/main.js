@@ -111,37 +111,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll('#mainNavbar .nav-link');
 
   function onScroll() {
-      // Debug
-      console.log('innerHeight:', window.innerHeight, 
-          'pageYOffset:', window.pageYOffset, 
-          'scrollHeight:', document.documentElement.scrollHeight, 
-          'sum:', window.innerHeight + window.pageYOffset);
 
-      let found = false;
-      const atBottom = (window.innerHeight + window.pageYOffset) >= (document.documentElement.scrollHeight - 2);
 
-      if (atBottom) {
-          navLinks.forEach(link => link.classList.remove('active'));
-          const contactLink = document.querySelector('#mainNavbar .nav-link[href="#contact"]');
-          if (contactLink) contactLink.classList.add('active');
-          found = true;
-      } else {
-          let currentSection = null;
-          sections.forEach(section => {
-              const rect = section.getBoundingClientRect();
-              if (rect.top <= window.innerHeight * 0.25 && rect.bottom > window.innerHeight * 0.25) {
-                  currentSection = section;
-              }
-          });
-          navLinks.forEach(link => link.classList.remove('active'));
-          if (currentSection) {
-              const id = currentSection.getAttribute('id');
-              const activeLink = document.querySelector(`#mainNavbar .nav-link[href="#${id}"]`);
-              if (activeLink) activeLink.classList.add('active');
-              found = true;
-          }
+    let found = false;
+    const atBottom = (window.innerHeight + window.pageYOffset) >= (document.documentElement.scrollHeight - 2);
+
+    if (atBottom) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      const contactLink = document.querySelector('#mainNavbar .nav-link[href="#contact"]');
+      if (contactLink) contactLink.classList.add('active');
+      found = true;
+    } else {
+      let currentSection = null;
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.25 && rect.bottom > window.innerHeight * 0.25) {
+          currentSection = section;
+        }
+      });
+      navLinks.forEach(link => link.classList.remove('active'));
+      if (currentSection) {
+        const id = currentSection.getAttribute('id');
+        const activeLink = document.querySelector(`#mainNavbar .nav-link[href="#${id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+        found = true;
       }
-      if (!found) navLinks.forEach(link => link.classList.remove('active'));
+    }
+    if (!found) navLinks.forEach(link => link.classList.remove('active'));
   }
 
   window.addEventListener('scroll', onScroll);

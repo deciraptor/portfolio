@@ -590,7 +590,7 @@ textarea::placeholder {
     }
 
     .cta-image {
-        width: 90%;
+        width: 75%;
     }
 
     .lead {
@@ -611,6 +611,8 @@ textarea::placeholder {
     }
 }
 
+/*===== Animation du contenu =====*/
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
@@ -625,13 +627,11 @@ textarea::placeholder {
 }
 
 /* ===== Adoucir le scroll spy ===== */
+
 #mainNavbar .nav-link {
     border-radius: 12px !important;
-    /* même rayon que .btn-contact */
     padding: 0.5rem 1rem;
-    /* même padding que .btn-contact */
     transition: background-color 0.3s;
-    /* seulement la couleur du fond */
 }
 
 #mainNavbar .nav-link.active {
@@ -643,5 +643,4 @@ textarea::placeholder {
 #mainNavbar .nav-link,
 #mainNavbar .nav-link.active {
     transition-property: background-color;
-    /* on ne liste que ce qu’on veut animer */
 }
