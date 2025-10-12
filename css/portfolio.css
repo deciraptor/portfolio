@@ -585,7 +585,8 @@ textarea::placeholder {
 @media (max-width: 575.98px) {
 
     #cta-btn {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        width: 60%;
         /* plus petit que la valeur par défaut */
     }
 
