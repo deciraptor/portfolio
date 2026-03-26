@@ -14,7 +14,7 @@
     --btn-font-size: 1rem;
 }
 
-/* ===== Police de carctère ===== */
+/* ===== Police de caractères ===== */
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -129,6 +129,97 @@ header {
     filter: brightness(0.7);
 }
 
+#cta-btn-ptf {
+    color: var(--color-fontPrimary) !important;
+    font-size: 0.9rem;
+    font-weight: 700 !important;
+    border: 2px solid var(--color-stroke);
+    border-radius: 0.5rem;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+#cta-btn-ptf:hover {
+    box-shadow: 0 0 8px var(--color-stroke);
+    color: var(--color-stroke);
+    filter: brightness(0.7);
+}
+
+/* ===== Language Button ===== */
+
+.lang-switch {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--color-fontPrimary);
+}
+
+.lang-switch:focus,
+.lang-switch:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.lang-switch i {
+    color: var(--color-fontPrimary);
+    font-size: 0.8rem;
+}
+
+.flag-icon {
+    width: 20px;
+    height: auto;
+    display: block;
+}
+
+.lang-switch:hover {
+    filter: brightness(0.7);
+}
+
+/* ===== Dropdown langue ===== */
+
+.dropdown-menu {
+    background-color: var(--color-stroke);
+    /* même couleur que ton bouton */
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+}
+
+/* Texte blanc comme navbar */
+.dropdown-item {
+    color: var(--color-fontPrimary);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Hover propre */
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--color-fontPrimary);
+}
+
+.flag-dropdown {
+    width: 22px;
+    height: 14px;
+    /* ratio rectangulaire */
+    object-fit: cover;
+    border-radius: 2px;
+    /* léger arrondi moderne */
+}
+
+.dropdown-menu {
+    box-shadow: 0 0 10px var(--color-stroke);
+}
+
 /* Scrollspy */
 
 #mainNavbar .nav-link.active {
@@ -184,10 +275,10 @@ header {
 .cta-image {
     display: block;
     width: 41%;
-    max-width: 70vw;
+    max-width: 73vw;
     height: auto;
-    margin-right: 1.4rem;
-    filter: brightness(0.7);
+    margin-right: 0;
+    filter: brightness(0.8);
 }
 
 #cta-btn {
@@ -238,7 +329,7 @@ header {
 
 .lead {
     color: var(--color-fontPrimary);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-top: 3rem;
     line-height: 2;
@@ -286,7 +377,7 @@ header {
 
 .skill-icons img {
     width: auto;
-    height: 32px;
+    height: 44px;
 }
 
 .skill-icons.stack {
@@ -368,7 +459,7 @@ header {
 
 .year {
     color: var(--color-fontPrimary);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
 }
 
@@ -424,7 +515,7 @@ header {
 }
 
 .card-text {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     padding-top: 0.5em;
 }
